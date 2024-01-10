@@ -1,0 +1,140 @@
+*{
+    font-size: 2vw;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+    background-color: black;
+}
+
+/* Header Section*/
+
+header{
+    margin-top: 3vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5vw;
+
+    .logo{
+        margin-left: 2.5vw;
+        width: 15%;
+    }
+    li{
+        display: inline;
+    }
+    a{
+        padding-right: 1vw;
+        position: relative;
+    }
+    a::before{
+        content: '';
+        width: calc(100% - 1vw);
+        height: 1px;
+        background-color: red;
+        position: absolute;
+        left: 0;
+        bottom: 0.5vw;
+        transform: scaleX(0);
+        transition: all 0.5s;
+    }
+    a:hover::before{
+        background-color: white;
+        transform: scaleX(1);
+    }
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        width: 55%;
+    }
+    .github{
+        margin-right: 2vw;
+    }
+    .git:hover{
+        border-bottom: 1px solid white;
+    }
+    .header_nav_mobile{
+        display: none;
+        width: 40px;
+        height: 40px;
+    }
+    .header_nav_mobile span{
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color:white;
+        margin-top: 19px;
+        position: relative;
+    }
+    .header_nav_mobile span::before{
+        content: '';
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color:white;
+        position: absolute;
+        right: 0;
+        top: 6px;
+        transition: width 0.3s;
+    }
+    .header_nav_mobile span::after{
+        content: '';
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color:white;
+        position: absolute;
+        left: 0;
+        bottom: 6px;
+        transition: width 0.3s;
+    }
+    @media (max-width:880px){
+        .menu{
+            display: none;
+        }
+        .menu.show{
+            display: block;
+        }
+        .menu.show ul{
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 68px;
+            background-color: rgba(116, 99, 99, 0.1);
+            backdrop-filter: blur(15px);
+            z-index: 10000;
+            min-width: 150px;
+            padding: 20px 0;
+        }
+        .menu.show li{
+            display: block;
+            text-align: right;
+        }
+        .menu.show li a{
+            display: inline-block;
+            padding: 10px;
+        }
+        .header_nav_mobile{
+            display: block;
+        }
+    }
+}
+
+main{
+
+    i:hover{
+        border-bottom: 1px solid red;
+    }
+
+    .intro{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 99%;
+        background: url("/Images/introwp.jpg") center/cover no-repeat;
+        background-position: center 5vw;
+    }
+}
