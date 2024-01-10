@@ -16,6 +16,7 @@ header{
     display: flex;
     justify-content: space-between;
     font-size: 1.5vw;
+    align-items: center;
 
     .logo{
         margin-left: 2.5vw;
@@ -47,12 +48,6 @@ header{
         display: flex;
         justify-content: space-between;
         width: 55%;
-    }
-    .github{
-        margin-right: 2vw;
-    }
-    .git:hover{
-        border-bottom: 1px solid white;
     }
     .header_nav_mobile{
         display: none;
@@ -89,7 +84,7 @@ header{
         bottom: 6px;
         transition: width 0.3s;
     }
-    @media (max-width:880px){
+    @media (max-width:1070px){
         .menu{
             display: none;
         }
@@ -97,6 +92,7 @@ header{
             display: block;
         }
         .menu.show ul{
+            border-top: 1px solid red;
             display: block;
             position: absolute;
             right: 0;
@@ -134,7 +130,11 @@ main{
         justify-content: center;
         align-items: center;
         width: 99%;
+    }
+    .intro span{
+        margin-top: 1vw;
+        width: 90%;
+        height: 10vw;
         background: url("/Images/introwp.jpg") center/cover no-repeat;
-        background-position: center 5vw;
     }
 }
