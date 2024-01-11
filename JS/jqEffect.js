@@ -1,5 +1,13 @@
 $(document).ready(()=>{
-    $('body').fadeIn(2000);
+
+    $("#headerToggle").click(()=>{
+
+        $(".menu").toggleClass("show");
+
+        var currentExpandedState = $('#headerToggle').attr("aria-expanded");
+        $('#headerToggle').attr("aria-expanded", currentExpandedState === "false" ? "true" : "false");
+    });
+
     $('.project1').on('mouseenter', (event)=>{
         $('.project1').css({
             'transform': 'scale(0.8)',

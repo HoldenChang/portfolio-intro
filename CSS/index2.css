@@ -9,18 +9,23 @@ body{
     background-color: black;
 }
 
+/* Skip Menu */
+
+
 /* Header Section*/
 
 header{
     margin-top: 3vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 1.5vw;
     align-items: center;
 
     .logo{
         margin-left: 2.5vw;
         width: 15%;
+        font-size: 2.5vw;
     }
     li{
         display: inline;
@@ -44,6 +49,9 @@ header{
         background-color: white;
         transform: scaleX(1);
     }
+    a:focus{
+
+    }
     .menu{
         display: flex;
         justify-content: space-between;
@@ -53,6 +61,7 @@ header{
         display: none;
         width: 40px;
         height: 40px;
+        cursor: pointer;
     }
     .header_nav_mobile span{
         display: block;
@@ -111,6 +120,13 @@ header{
             display: inline-block;
             padding: 10px;
         }
+        .menu.show + .header_nav_mobile span::before{
+            width: 20px;
+        }
+        .menu.show + .header_nav_mobile span::after{
+            width: 20px;
+        }
+
         .header_nav_mobile{
             display: block;
         }
