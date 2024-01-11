@@ -3,93 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holden Chang (DongHoon Chang)</title>
+    <title>Holden(DongHoon) Chang </title>
     <link rel="stylesheet" href="CSS/index.css">
     <script src="https://kit.fontawesome.com/abe8564c6b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.9.0/dist/ScrollTrigger.min.js"></script>
 </head>
 <body>
-    <div class="space"></div>
-    <nav>
-        <div class="logo">Portfolio</div>
-        <div class="menu">
-            <div class="github"><a class="git" href="https://github.com/HoldenChang?tab=repositories"><i class="fa-brands fa-github fa-lg"></i></a></div>
-            <div class="skills">
-                <a href="#skillsCTN">Skills & Abilities</a>
-            </div>
-            <div class="aboutme">
-                <a href="#aboutmeCTN">About Me</a>
-            </div>
-            <div class="projects">
-                <a href="#projectCTN">Projects</a>
-            </div>
+    <header>
+        <div class="logo">PORTFOLIO</div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#skills">Skills & Abilities</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li class="github"><a class="git" href="https://github.com/HoldenChang?tab=repositories"><i class="fa-brands fa-github fa-lg"></i></a></li>
+            </ul>
+        </nav>
+        <div class="headerMobile" id="headerToggle" tabindex="0"
+        aria-controls="primary-menu" aria-expanded="false" role="button">
+            <span></span>
         </div>
-    </nav>
-    <div class="intro">
-        <div class="introduction">Hi I'm <i>Holden (DongHoon)</i> <i>Chang</i> 
-            <br> A Web developer who loves to create user-friendly website
-        </div>
-        <div class="strong">Specialized in <i>HTML</i> <i>CSS</i> <i>JavaScript</i> <i>PHP</i></div>
-    </div>
-    <div id="aboutmeCTN">
-        <div class="title2">
-            <h1>About Me</h1>
-            <p>I earned my Computer Information Systems diploma from Okanagan College, with a primary focus on full-stack web development. 
-                Throughout my studies, I gained expertise in a wide range of front-end technologies, including HTML, CSS, JavaScript, JQuery, and Bootstrap. 
-                On the back end, I gained experties in PHP and SQL. 
-                <br>
-                <br>
-                Additionally, I am proficient in various essential tools and platforms, such as cPanel, Github, Figma, phpMyAdmin, Visual Studio Code, Jira, and Microsoft Office. 
-                I have successfully completed numerous web projects, both independently and as part of a collaborative team.
-        </div>
-        <div class="contact">
-            <h1>Contact</h1>
-            <h3>email: ncsm2523@gmail.com</h3>
-            <h3>phone: 250 258 0859</h3>
-            <h3>Linkedin: <a href="https://www.linkedin.com/in/holden-chang-2b7860259/"><i class="fa-brands fa-linkedin"></i></a></h3>
-        </div>
-    </div>
-    <div id="projectCTN">
-        <div class="title1">
-            <h1>Projects</h1>
-        </div>
-        <div class="projectsDisplay">
-            <div class="project1">
-                <a href="https://holden-chang.com/project1/mainPage.php">
-                    <img src="Images/project1.PNG" alt="project1-Game site">
-                </a>
-                <p>Website using HTML, CSS, JavaScript, JQuery, Ajax, and PHP</p>
-            </div>
-            <div class="project2">
-                <a href="https://holden-chang.com/project2/index.html">
-                    <img src="Images/project2.PNG" alt="project2-Tetris">
-                </a>
-                <p>Project for JavaScript</p>
-            </div>
-        </div>
-    </div>
-    <div id="skillsCTN">
-        <div class="title3">
-            <h1>Skills and Abilities</h1>
-            <h2>Strong</h2>
-            <p>HTML | CSS | Javascript | JQuery | Bootstrap | PHP | SQL | Ajax | WIX | 
+    </header>
+    <main>
+        <section id="intro">
+            <p>Hi I'm <i>Holden (DongHoon)</i> <i>Chang</i>
+                <br>I'm a Web developer, specialied in creating <i>user-friendly</i> <i>website.</i> 
             </p>
-            <h2>Knowledgeable</h2>
-            <p>JAVA | Visual Basic | C | Windows | Linux | </p>
-            <h2>ETC</h2>
-            <p>phpMyAdmin | cPanel | GitHub | Jira | Figma | NetBean | MS Office |
-                Visual Studio Code | Eclipse | Android Studio |
-            </p>
+            <span></span>
+        </section>
+
+        <section id="aboutMe">
+            <div class="aboutMeInner">
+                <div class="aboutMeTitle">
+                    About Me
+                </div>
+                <p>I completed my Computer Information Systems diploma at Okanagan College, specializing in full-stack web development. 
+                    My coursework extensively covered front-end technologies such as 
+                    HTML, CSS, JavaScript, JQuery, and Bootstrap. 
+                    On the back end, I developed proficiency in PHP and SQL.
+                    <br>
+                    <br>
+                    Complementing my diploma, I also obtained an IT Support Professional certificate. 
+                    This program equipped me with a solid understanding of 
+                    operating systems, computer networking, basic computer architecture, 
+                    and troubleshooting skills.
             </div>
-    </div>
-    <div id="certificateCTN">
-        <div class="title4">
-            <h1>Certificates</h1>
-            <p> IT Support Professional | 2023 |
-            </p>
+        </section>
+
+        <section id="skills">
+            <div class="skillIner">
+                <div class="skillTitle">
+                    Skills & Abilities 
+                </div>
+                <div class="skillDesc">
+                    <div>
+                        <span>1.</span>
+                        <h3>Front-end</h3>
+                        <p>| HTML | CSS | JavaScript | JQuery | Bootstrap | WIX |</p>
+                    </div>
+                    <div>
+                        <span>2.</span>
+                        <h3>Back-end</h3>
+                        <p>| PHP | phpMyAdmin | SQL | Ajax | cPanel |</p>
+                    </div>
+                    <div>
+                        <span>3.</span>
+                        <h3>Other Skills</h3>
+                        <p>| Windows | Linux | Java | C | Visual Basic | GitHub | Jira | Figma |</p>
+                    </div>
+                </h2>
+                </div>
             </div>
-    </div>
+        </section>
+        <section id="projects">
+            <div class="projectInner">
+                <div class="projectTitle">
+                    Projects
+                </div>
+                <div class="projectContainer">
+                    <article class="project_Item p1">
+                        <span class="num">01.</span>
+                        <a href="https://github.com/HoldenChang/project1" target="_blank"
+                        class="img" rel="noreferrer"><img src="/Images/project1.PNG" alt="project1">
+                    </a>
+                    <h3 class="title">First Website</h3>
+                    <p class="desc"> This site was one of college project. 
+                        The site was built based on HTML, CSS, Javascript, JQuery, PHP, and Ajax.
+                    </p>
+                    <a href="https://holden-chang.com/project1/mainPage.php" target="_blank" class="site" rel="noreferrer">View Website</a>
+                    </article>
+
+                    <article class="project_Item p2">
+                        <span class="num">02.</span>
+                        <a href="https://github.com/HoldenChang/project2" target="_blank"
+                        class="img" rel="noreferrer"><img src="/Images/project2.PNG" alt="project1">
+                    </a>
+                    <h3 class="title">Tetris Game</h3>
+                    <p class="desc"> This project is to present my javascript skill. This is second project and 
+                        I was still learning Javascript, so it doesn't look perfect and pretty. 
+                    </p>
+                    <a href="https://holden-chang.com/project2/index.html" target="_blank" class="site" rel="noreferrer">Play Tetris</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+
+        </section>
+    </main>
     <script src="JS/JQuery.js"></script>
-    <script src="JS/jsEffect.js"></script>
     <script src="JS/jqEffect.js"></script>
+    <script src="JS/jsEffect.js"></script>
 </body>
-</html> 
+</html>
