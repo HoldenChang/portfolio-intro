@@ -14,7 +14,7 @@ $(document).ready(()=>{
     const horSection = gsap.utils.toArray(".project_Item");
 
     gsap.to(horSection, {
-        xPercent: -120 * (horSection.length - 1),
+        xPercent: -250 * (horSection.length - 1),
         ease: "none",
         scrollTrigger: {
             trigger: "#projects",
