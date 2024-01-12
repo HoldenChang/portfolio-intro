@@ -28,4 +28,17 @@ $(document).ready(()=>{
         },
     });
 
+    const backgroundColors = ['#000', '#fff', '#e8d5ca'];
+    const fontColors = ['#b81191', '#db0404', '#6763c7'];
+    function changeColors() {
+
+    const randomBgColor = backgroundColors[Math.floor(Math.random() * backgroundColors.length)];
+    const randomFontColor = fontColors[Math.floor(Math.random() * fontColors.length)];
+
+    $('.contactDesc').css('background-color', randomBgColor);
+    $('.contactDesc i').css('color', randomFontColor);
+    }
+
+    setInterval(changeColors, 5000);
+
 });
