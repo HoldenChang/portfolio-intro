@@ -8,6 +8,21 @@ $(document).ready(()=>{
 
         $('#headerToggle').attr("aria-expanded", currentExpandedState === "false" ? "true" : "false");
     });
+    $('main').fadeOut();
+    $('.firstLine').fadeIn(2000, function(){
+        $('.firstLine').fadeOut(1000, function(){
+            $('.secondLine').fadeIn(2000, function(){
+                $('.secondLine').fadeOut(1000, function(){
+                    $('.thirdLine').fadeIn(2000, function(){
+                        $('.thirdLine').fadeOut(1000, function(){
+                            $('.start').fadeOut(1000);
+                            $('main').fadeIn();
+                        })
+                    });
+                })
+            });
+        })
+    });
 
     gsap.registerPlugin(ScrollTrigger);
 
@@ -27,18 +42,5 @@ $(document).ready(()=>{
             anticipatePin: 1,
         },
     });
-
-    const backgroundColors = ['#000', '#fff', '#e8d5ca'];
-    const fontColors = ['#b81191', '#db0404', '#6763c7'];
-    function changeColors() {
-
-    const randomBgColor = backgroundColors[Math.floor(Math.random() * backgroundColors.length)];
-    const randomFontColor = fontColors[Math.floor(Math.random() * fontColors.length)];
-
-    $('.contactDesc').css('background-color', randomBgColor);
-    $('.contactDesc i').css('color', randomFontColor);
-    }
-
-    setInterval(changeColors, 5000);
 
 });

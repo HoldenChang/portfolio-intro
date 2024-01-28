@@ -141,6 +141,20 @@ header{
     }
 }
 
+.start{
+    background-color: #000;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        color: #fff;
+        font-size: 5vw;
+        display: none;
+    }
+}
+
+
 main{
 
     i:hover{
@@ -165,6 +179,7 @@ main{
         background: url("/Images/introwp.jpg") center/cover no-repeat;
     }
     #intro p{
+        font-size: 4vw;
         color: #fff;
     }
     #intro i{
@@ -172,7 +187,6 @@ main{
     }
 
     /* Skill Sections*/
-
     .skillIner{
         padding: 2vw;
         display: flex;
@@ -228,8 +242,14 @@ main{
         .skillDesc{
             width: 100%;
         }
+        .skillDesc div{
+            margin-bottom: 25vw;
+        }
         .skillDesc span{
             font-size: 15vw;
+        }
+        .skillDesc p{
+            font-size: 5vw;
         }
     }
 
@@ -258,6 +278,9 @@ main{
             font-size: 30px;
             height: auto;
             background-color: #ede3da;
+        }
+        .aboutMeInner p{
+            font-size: 4vw;
         }
     }
 
@@ -340,7 +363,7 @@ main{
         .projectTitle{
             width: 100%;
             margin-bottom: 10vw;
-            font-size: 30px;
+            font-size: 20px;
             height: auto;
             background-color: #ede3da;
         }
@@ -349,6 +372,12 @@ main{
             width: 400px;
             padding: 40px 30px;
             height: auto;
+        }
+        .project_Item img{
+            height: 220px;
+        }
+        .project_Item a{
+            font-size: 5vw;
         }
     }
 
