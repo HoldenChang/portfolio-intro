@@ -8,7 +8,7 @@ $(document).ready(()=>{
 
         $('#headerToggle').attr("aria-expanded", currentExpandedState === "false" ? "true" : "false");
     });
-    $('main').fadeOut();
+    $('main').fadeOut(100);
     $('.firstLine').fadeIn(2000, function(){
         $('.firstLine').fadeOut(1000, function(){
             $('.secondLine').fadeIn(2000, function(){
