@@ -8,20 +8,20 @@ $(document).ready(()=>{
 
         $('#headerToggle').attr("aria-expanded", currentExpandedState === "false" ? "true" : "false");
     });
-    $('main').fadeOut(100);
     $('.firstLine').fadeIn(2000, function(){
         $('.firstLine').fadeOut(1000, function(){
             $('.secondLine').fadeIn(2000, function(){
                 $('.secondLine').fadeOut(1000, function(){
                     $('.thirdLine').fadeIn(2000, function(){
                         $('.thirdLine').fadeOut(1000, function(){
-                            $('.start').fadeOut(1000);
-                            $('main').fadeIn();
-                        })
+                            $('.start').fadeOut(1000, function(){
+                                window.location.href = "main.html";
+                            });
+                        });
                     });
-                })
+                });
             });
-        })
+        });
     });
 
     gsap.registerPlugin(ScrollTrigger);
@@ -34,7 +34,7 @@ $(document).ready(()=>{
         scrollTrigger: {
             trigger: "#projects",
             start: "top 0px",
-            end: "+=1000",
+            end: "+=800",
             pin: true,
             scrub: 0.2,
             markers: false,
