@@ -8,11 +8,11 @@ $(document).ready(()=>{
 
         $('#headerToggle').attr("aria-expanded", currentExpandedState === "false" ? "true" : "false");
     });
-    $('.firstLine').fadeIn(2000, function(){
+    $('.firstLine').fadeIn(1500, function(){
         $('.firstLine').fadeOut(1000, function(){
-            $('.secondLine').fadeIn(2000, function(){
+            $('.secondLine').fadeIn(1500, function(){
                 $('.secondLine').fadeOut(1000, function(){
-                    $('.thirdLine').fadeIn(2000, function(){
+                    $('.thirdLine').fadeIn(1500, function(){
                         $('.thirdLine').fadeOut(1000, function(){
                             $('.start').fadeOut(1000, function(){
                                 window.location.href = "main.html";
