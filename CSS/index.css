@@ -141,9 +141,8 @@ header{
     }
 }
 
-.start{
+#start{
     background-color: #000;
-    height: 45vw;
     display: flex;
     justify-content: center;
     align-items: center;

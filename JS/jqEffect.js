@@ -14,7 +14,7 @@ $(document).ready(()=>{
                 $('.secondLine').fadeOut(1000, function(){
                     $('.thirdLine').fadeIn(1500, function(){
                         $('.thirdLine').fadeOut(1000, function(){
-                            $('.start').fadeOut(1000, function(){
+                            $('#start').fadeOut(1000, function(){
                                 window.location.href = "main.html";
                             });
                         });
