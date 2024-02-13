@@ -1,4 +1,4 @@
-function setDivHeight() {
+function setIndexHeight() {
 
     const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
     const vwToPixels = (7 * viewportWidth) / 100;
@@ -9,5 +9,5 @@ function setDivHeight() {
 
 }
 
-setDivHeight();
-window.addEventListener('resize', setDivHeight);
+setIndexHeight();
+window.addEventListener('resize', setIndexHeight);
