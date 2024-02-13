@@ -10,7 +10,6 @@ function setDivHeight() {
 }
 
 setDivHeight();
-
 window.addEventListener('resize', setDivHeight);
 
 
