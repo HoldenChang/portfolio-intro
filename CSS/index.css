@@ -141,6 +141,8 @@ header{
     }
 }
 
+    /* Intro Section*/
+
 #start{
     background-color: #000;
     display: flex;
@@ -153,37 +155,35 @@ header{
     }
 }
 
+#intro{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #000;
+}
+#intro span{
+    margin-top: 1vw;
+    width: 90%;
+    height: 10vw;
+    background: url("/Images/introwp.jpg") center/cover no-repeat;
+}
+#intro p{
+    font-size: 4vw;
+    color: #fff;
+}
+#intro i{
+    color: #fff;
+}
+
 main{
 
     i:hover{
         border-bottom: 1px solid red;
     }
     
-    /* Intro Section*/
-
-    #intro{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        background-color: #000;
-    }
-    #intro span{
-        margin-top: 1vw;
-        width: 90%;
-        height: 10vw;
-        background: url("/Images/introwp.jpg") center/cover no-repeat;
-    }
-    #intro p{
-        font-size: 4vw;
-        color: #fff;
-    }
-    #intro i{
-        color: #fff;
-    }
-
     /* Skill Sections*/
     .skillIner{
         padding: 2vw;
