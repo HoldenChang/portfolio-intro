@@ -141,48 +141,79 @@ header{
     }
 }
 
+main{
+
     /* Intro Section*/
 
-#start{
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    p{
+    #intro{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #000;
+    }
+    #intro span{
+        margin-top: 1vw;
+        width: 90%;
+        height: 10vw;
+        background: url("/Images/introwp.jpg") center/cover no-repeat;
+    }
+    #intro p{
+        font-size: 4vw;
         color: #fff;
-        font-size: 5vw;
+    }
+    #intro i{
+        color: #fff;
+    }
+    #intro .firstLine{
         display: none;
     }
-}
-
-#intro{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: #000;
-}
-#intro span{
-    margin-top: 1vw;
-    width: 90%;
-    height: 10vw;
-    background: url("/Images/introwp.jpg") center/cover no-repeat;
-}
-#intro p{
-    font-size: 4vw;
-    color: #fff;
-}
-#intro i{
-    color: #fff;
-}
-
-main{
+    #intro .secondLine{
+        display: none;
+    }
+    #intro .thirdLine{
+        display: none;
+    }
+    #intro .lastLine{
+        display: none;
+    }
 
     i:hover{
         border-bottom: 1px solid red;
     }
+
+
+        .aboutMeInner{
+            padding: 2vw;
+        }
+        .aboutMeTitle{
+            position: sticky;
+            top: 50px;
+            left: 0;
+            width: 47%;
+            height: 5vw;
+            margin-bottom: 3vw;
+            font-size: 4vw;
+            font-weight: 900;
+            line-height: 1.6;
+            text-transform: uppercase;
+            border-bottom: 0.4vw solid black;
+        }
+    
+        @media (max-width: 800px){
+            .aboutMeTitle{
+                width: 100%;
+                margin-bottom: 10vw;
+                font-size: 30px;
+                height: auto;
+                background-color: #ede3da;
+            }
+            .aboutMeInner p{
+                font-size: 4vw;
+            }
+        }
     
     /* Skill Sections*/
     .skillIner{
@@ -248,37 +279,6 @@ main{
         }
         .skillDesc p{
             font-size: 5vw;
-        }
-    }
-
-    /* About Me Section*/
-    .aboutMeInner{
-        padding: 2vw;
-    }
-    .aboutMeTitle{
-        position: sticky;
-        top: 50px;
-        left: 0;
-        width: 47%;
-        height: 5vw;
-        margin-bottom: 3vw;
-        font-size: 4vw;
-        font-weight: 900;
-        line-height: 1.6;
-        text-transform: uppercase;
-        border-bottom: 0.4vw solid black;
-    }
-
-    @media (max-width: 800px){
-        .aboutMeTitle{
-            width: 100%;
-            margin-bottom: 10vw;
-            font-size: 30px;
-            height: auto;
-            background-color: #ede3da;
-        }
-        .aboutMeInner p{
-            font-size: 4vw;
         }
     }
 

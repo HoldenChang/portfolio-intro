@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holden(DongHoon) Chang </title>
+    <title>Holden Chang </title>
     <link rel="stylesheet" href="CSS/index.css">
     <script src="https://kit.fontawesome.com/abe8564c6b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.9.0/dist/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <header>
@@ -24,13 +26,126 @@
             <span></span>
         </div>
     </header>
-    <section id="start">
-        <p class="firstLine">Welcome</p>
-        <p class="secondLine">I'm Holden</p>
-        <p class="thirdLine">I'm a Web Developer</p>
-    </section>
+    <main>
+        <section id="intro">
+            <p class="firstLine">Welcome</p>
+            <p class="secondLine">I'm Holden</p>
+            <p class="thirdLine">I'm a Web Developer</p>
+            <p class="lastLine"><br>I'm proud to show you my works</p>    
+            <span></span>
+        </section>
+        <section id="aboutMe">
+            <div class="aboutMeInner">
+                <div class="aboutMeTitle">
+                    About Me
+                </div>
+                <p>I completed my Computer Information Systems diploma at Okanagan College, specializing in full-stack web development. 
+                    My coursework extensively covered front-end technologies such as 
+                    HTML, CSS, JavaScript, JQuery, and Bootstrap. 
+                    On the back end, I developed proficiency in PHP and SQL.
+                    <br>
+                    <br>
+                    Complementing my diploma, I also obtained an IT Support Professional certificate. 
+                    This program equipped me with a solid understanding of 
+                    operating systems, computer networking, basic computer architecture, 
+                    and troubleshooting skills.
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="skillIner">
+                <div class="skillTitle">
+                    Skills & Abilities 
+                </div>
+                <div class="skillDesc">
+                    <div>
+                        <span>1.</span>
+                        <h3>Front-end</h3>
+                        <p>| HTML | CSS | JavaScript | JQuery | Bootstrap | WIX |</p>
+                    </div>
+                    <div>
+                        <span>2.</span>
+                        <h3>Back-end</h3>
+                        <p>| PHP | phpMyAdmin | SQL | Ajax | cPanel |</p>
+                    </div>
+                    <div class="thirdDiv">
+                        <span>3.</span>
+                        <h3>Other Skills</h3>
+                        <p>| Windows | Linux | Java | C | Visual Basic | GitHub | Jira | Figma |</p>
+                    </div>
+                </h2>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="projectInner">
+                <div class="projectTitle">
+                    Projects
+                </div>
+                <div class="projectContainer">
+                    <article class="project_Item p1">
+                        <span class="num">01.</span>
+                        <a href="https://github.com/HoldenChang/project1" target="_blank"
+                        class="img" rel="noreferrer"><img src="/Images/project1.PNG" alt="project1">
+                    </a>
+                    <h3 class="title">First Website</h3>
+                    <p class="desc"> This site was one of college project. 
+                        The site was built based on HTML, CSS, Javascript, JQuery, PHP, and Ajax.
+                    </p>
+                    <a href="https://holden-chang.com/project1/mainPage.php" target="_blank" class="site" rel="noreferrer">View Site</a>
+                    </article>
+
+                    <article class="project_Item p2">
+                        <span class="num">02.</span>
+                        <a href="https://github.com/HoldenChang/project2" target="_blank"
+                        class="img" rel="noreferrer"><img src="/Images/project2.PNG" alt="project2_Tetris">
+                    </a>
+                    <h3 class="title">Tetris Game</h3>
+                    <p class="desc"> This project is to present my javascript skill. This is second project and 
+                        I was still learning Javascript, so it doesn't look perfect and pretty. 
+                    </p>
+                    <a href="https://holden-chang.com/project2/index.html" target="_blank" class="site" rel="noreferrer">Play Tetris</a>
+                    </article>
+                    <article class="project_Item p3">
+                        <span class="num">03.</span>
+                        <a href="https://github.com/HoldenChang/portfolio-intro" target="_blank"
+                        class="img" rel="noreferrer"><img src="/Images/portfolio.PNG" alt="portfolioSite">
+                    </a>
+                    <h3 class="title">Portfolio</h3>
+                    <p class="desc">This is the portfolio site you are on right now. 
+                        I used more advanced JavaScript than in previous projects and 
+                        implemented more organized structures.
+                    </p>
+                    <a href="https://holden-chang.com" target="_blank" class="site" rel="noreferrer">View Site</a>
+                    </article>
+                    <article class="project_Item p4">
+                        <span class="num">04.</span>
+                        <a href="https://github.com/HoldenChang/portfolio-intro" target="_blank"
+                        class="img" rel="noreferrer"><img src="/Images/project3.PNG" alt="portfolioSite">
+                    </a>
+                    <h3 class="title">Adding API</h3>
+                    <p class="desc">Local business had requested adding API to their website, 
+                        so I added API and made some changes in their website.
+                    </p>
+                    <a href="https://www.korstire.ca/pages/shop-wheels" target="_blank" class="site" rel="noreferrer">View Site</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contactInner">
+                <div class="contacTitle">
+                    Contact
+                </div>
+                <div class="contactDesc">
+                    <i class="fa-solid fa-envelope"> Email: ncsm2523@gmail.com</i>
+                    <i class="fa-solid fa-square-phone"> Phone: 250-258-0859</i>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="JS/JQuery.js"></script>
     <script src="JS/jqEffect.js"></script>
-    <script src="JS/resizeIndex.js"></script>
+    <script src="JS/resizeMain.js"></script>
 </body>
 </html>
