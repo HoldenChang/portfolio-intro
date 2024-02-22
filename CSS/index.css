@@ -337,7 +337,7 @@ main{
     }
 
     .project_Item .title{
-        font-size: 35px;
+        font-size: 5vw;
         text-align: center;
         padding: 1px 0;
         font-weight: 700;
@@ -358,29 +358,30 @@ main{
     }
 
     @media (max-width: 800px){
-
-        .projectContainer{
-            overflow-x: hidden;
+        #projects{
+            overflow: hidden;
         }
-
         .projectTitle{
             width: 100%;
-            margin-bottom: 10vw;
+            margin-bottom: 3vw;
             font-size: 20px;
             height: auto;
             background-color: #ede3da;
         }
 
         .project_Item{
-            width: 75vw;
+            width: 40vw;
             padding: 2vw 3vw;
             height: auto;
         }
         .project_Item img{
-            height: 50vw;
+            height: 30vw;
         }
         .project_Item a{
-            font-size: 5vw;
+            font-size: 3vw;
+        }
+        .project_Item .desc{
+            font-size: 4vw;
         }
     }
 
