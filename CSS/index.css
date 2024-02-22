@@ -14,17 +14,18 @@ body{
 
 /* Header Section*/
 
-header{
-    position: sticky;
-    top: 0;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.5vw;
-    align-items: center;
-    backdrop-filter: blur(15px);
+    header{
+        position: sticky;
+        top: 0;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.5vw;
+        align-items: center;
+        backdrop-filter: blur(15px);
+    }
 
     .logo{
         margin-left: 2.5vw;
@@ -139,9 +140,6 @@ header{
             display: block;
         }
     }
-}
-
-main{
 
     /* Intro Section*/
 
@@ -185,35 +183,35 @@ main{
     }
 
 
-        .aboutMeInner{
-            padding: 2vw;
-        }
-        .aboutMeTitle{
-            position: sticky;
-            top: 50px;
-            left: 0;
-            width: 47%;
-            height: 5vw;
-            margin-bottom: 3vw;
-            font-size: 4vw;
-            font-weight: 900;
-            line-height: 1.6;
-            text-transform: uppercase;
-            border-bottom: 0.4vw solid black;
-        }
+    .aboutMeInner{
+        padding: 2vw;
+    }
+    .aboutMeTitle{
+        position: sticky;
+        top: 50px;
+        left: 0;
+        width: 47%;
+        height: 5vw;
+        margin-bottom: 3vw;
+        font-size: 4vw;
+        font-weight: 900;
+        line-height: 1.6;
+        text-transform: uppercase;
+        border-bottom: 0.4vw solid black;
+    }
     
-        @media (max-width: 800px){
-            .aboutMeTitle{
-                width: 100%;
-                margin-bottom: 10vw;
-                font-size: 30px;
-                height: auto;
-                background-color: #ede3da;
-            }
-            .aboutMeInner p{
-                font-size: 4vw;
-            }
+    @media (max-width: 800px){
+        .aboutMeTitle{
+            width: 100%;
+            margin-bottom: 10vw;
+            font-size: 30px;
+            height: auto;
+            background-color: #ede3da;
         }
+        .aboutMeInner p{
+            font-size: 4vw;
+        }
+    }
     
     /* Skill Sections*/
     .skillIner{
@@ -429,4 +427,3 @@ main{
             background-color: #ede3da;
         }
     }
-}
