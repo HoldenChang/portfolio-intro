@@ -1,4 +1,4 @@
-function setMainHeight() {
+function setIntroHeight() {
 
     const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
     const vwToPixels = (7 * viewportWidth) / 100;
@@ -9,7 +9,7 @@ function setMainHeight() {
 
 }
 
-setMainHeight();
-window.addEventListener('resize', setMainHeight);
+setIntroHeight();
+window.addEventListener('resize', setIntroHeight);
 
 

@@ -358,6 +358,11 @@ main{
     }
 
     @media (max-width: 800px){
+
+        .projectContainer{
+            overflow-x: hidden;
+        }
+
         .projectTitle{
             width: 100%;
             margin-bottom: 10vw;
@@ -367,12 +372,12 @@ main{
         }
 
         .project_Item{
-            width: 400px;
-            padding: 40px 30px;
+            width: 75vw;
+            padding: 2vw 3vw;
             height: auto;
         }
         .project_Item img{
-            height: 220px;
+            height: 50vw;
         }
         .project_Item a{
             font-size: 5vw;
